@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  field_goals_made: 1
+  field_goals_attempted: 1
+  field_goal_percentage: 9.99
+  rank: MyString
+
+two:
+  field_goals_made: 1
+  field_goals_attempted: 1
+  field_goal_percentage: 9.99
+  rank: MyString

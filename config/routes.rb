@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :shot_profiles
+  resources :nba_finals, only: [:index, :show] do
+    resources :shot_profiles, except: [:show]
+  end
 end
