@@ -5,12 +5,12 @@ class NbaFinalsController < ApplicationController
   def index
     @nba_finals = NbaFinal.all
 
-    render json: @nba_finals
+    render json: @nba_finals.to_json(include: :shot_profiles)
   end
 
   # GET /nba_finals/1
   def show
-    render json: @nba_final
+    render json: @nba_final.to_json(include: :shot_profiles)
   end
 
   # POST /nba_finals

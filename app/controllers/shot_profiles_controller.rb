@@ -46,6 +46,12 @@ class ShotProfilesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def shot_profile_params
-      params.require(:shot_profile).permit(:field_goals_made, :field_goals_attempted, :field_goal_percentage, :rank)
+      params.require(:shot_profile).permit(:field_goals_made, :field_goals_attempted, :field_goal_percentage, :area)
     end
+
+
 end
+
+
+
+#  
